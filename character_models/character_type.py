@@ -7,11 +7,11 @@ class CharacterType():
         self.id = None
         self.name = None
 
-    def __str__(self) -> str:
+    def __str__(self):
         return json.dumps(self.__dict__)
 
     @staticmethod
-    def from_json(json_obj: json) -> CharacterType:
+    def from_json(json_obj: json):
         c_type = CharacterType()
         c_type = json_obj['id']
         c_type = json_obj['name']

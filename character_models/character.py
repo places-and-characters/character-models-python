@@ -10,7 +10,7 @@ class Character:
         self.name = None
         self.experience_points = None
 
-    def __str__(self) -> str:
+    def __str__(self):
         return json.dumps(self.__dict__)
 
     @staticmethod
