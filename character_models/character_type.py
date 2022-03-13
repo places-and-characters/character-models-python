@@ -8,7 +8,7 @@ class CharacterType():
         self.name = None
 
     def __str__(self) -> str:
-        return json.dumps(self)
+        return json.dumps(self.__dict__)
 
     @staticmethod
     def from_json(json_obj: json) -> CharacterType:
