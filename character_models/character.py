@@ -29,7 +29,7 @@ class Character:
     def _validate_field(field, name, raise_exception=False):
         if field == None:
             if raise_exception:
-                raise Exception('%s is None' % name)
+                raise KeyError('%s is None' % name)
             return False
         return True
 
